@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- CSS -->
+		<link rel="stylesheet" href="style.css">
+		<!-- End CSS -->
+		<!-- meta elements -->
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="description" content="Online watch shop">
+        <meta name="keywords" content="watches, timepieces, luxury watches, men's watches, women's watches">
+		
+		<!-- Schema.org markup for Google+ -->
+		<meta itemprop="name" content="Watch Shop">
+		<meta itemprop="description" content="Shop for high-quality watches at our online store">
+		<meta itemprop="image" content="Your URL"> 
+		
+		<!-- Open Graph data -->
+		<meta property="og:title" content="Watch Shop">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="Your URL">
+		<meta property="og:image" content="Your URL">
+		<meta property="og:description" content="Shop for high-quality watches at our online store">
+		<meta property="article:tag" content="watches, timepieces, luxury watches, men's watches, women's watches">
+		
+		<!-- Twitter Card data -->
+		<meta name="twitter:title" content="Watch Shop">
+		<meta name="twitter:description" content="Shop for high-quality watches at our online store">
+		
+        <meta name="author" content="Filip Dunðer">
+		<!-- favicon meta -->
+		<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+		<link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALy8v7zIyMv8yMjL/FhYWcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyMjL/MjIy/zZLTP8SWXL/Clx6/yFEUv8yMjL/IiIirwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyMjL/Nk1O/wpcev89Tlr/QE1Y/05ea/8rYHf/EGuF/yBmdf8pKSnPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMjIy/wpcev9ATVj/5evu/83e6f/j7PL/maSt/0+Imv9BjJz/KSkpzwAAAAAAAAAAAAAAAAAAAAAAAAAALy8v7zZLTP89Tlr/5evu//D1+P/N3un/4+zy/9jl7f+Nn6z/UIOU/0OUpv8sLCzfAAAAAAAAAAAAAAAAAAAAADIyMv8SWXL/QE1Y/83e6f9aY2r/N1hn/8zZ3//Y5e3/pLnI/2qcr/9EnK//Ly8v7wAAAAAAAAAAKSkpzwAAAAAyMjL/Clx6/05ea//F2eX/vMPI/5Knsv8sQU3/2d/j/6/AzP9qnK//e77J/y8vL+8AAAAAIiIiryBmdf8iIiKvFhYWcCFEUv8rYHf/hpil/9Xk7P/F2eX/zNbd/+Ho7f96kKL/ccbX/1NkZf8TExNgAAAAABYWFnAnU13/FhYWcAAAAAAyMjL/EGuF/0+Imv+Nn6z/pLnI/6/AzP96kKL/TrDH/0+Vov8pKSnPAAAAAAAAAAAWFhZwbImM/xYWFnAAAAAAIiIiryBmdf9BjJz/UIOU/2qcr/9qnK//ccbX/0+Vov9kfX//GRkZfwAAAAAQEBBQOVti/427v/8iIiKvAAAAAAAAAAApKSnPKSkpz0OUpv88pL3/e77J/1NkZf8pKSnPGRkZfwAAAAAAAAAAKSkpz0Scr/8pKSnPAAAAAAAAAAAAAAAAAAAAAAMDAxAyMjL/EFlz/ylFTv8ZGRl/AAAAAAAAAAAAAAAAAAAAAAMDAxA6Pj//AwMDEAAAAAAAAAAAAAAAAAAAAAAyMjL/GnmO/z+rwv+U5O//bImM/xwcHI8AAAAAAAAAAAMDAxAyMjL/t/n//zIyMv8AAAAAAAAAAAAAAAAAAAAAAAAAAC8vL+8yMjL/MjIy/yNdaf8jXWn/IiIirwkJCTAzOjz/SLXM/zIyMv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcHByPPGt1/0GMnP8tQET/GnmO/zIyMv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABYWFnAiIiKvCQkJMC8vL+8AAAAAAAAAAAAAAAAAAAAA8f8AAMA/AACAHwAAgB8AAAAPAAAADQAAAAgAAIAdAACAHQAAgDgAAMBxAADx+wAA4HEAAPAjAAD+BwAA/68AAA==" rel="icon" type="image/x-icon" />
+		<!-- end favicon meta -->
+		<!-- end meta elements -->
+		
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+		<!-- End Google Fonts -->
+		<title>Watch Shop</title>
+	</head>
+<body>
+	
+
+	<header>
+		<div class="hero-image"></div>
+		<nav>
+			<ul>
+			  <li><a href="index.html">Home</a></li>
+			  <li><a href="news.html">News</a></li>
+			  <li><a href="contact.html">Contact</a></li>
+			  <li><a href="about-us.html">About</a></li>
+			  <li><a href="gallery.html">Watch Gallery</a></li>
+			</ul>
+		</nav>
+	</header>
+	<script>
+		var images = ['img/watch_1.jpg', 'img/watch_2.jpg', 'img/watch_3.jpg', 'img/watch_4.jpg', 'img/watch_5.jpg'];
+		var index = 0;
+		
+		function updateSlideshow() {
+			document.getElementById('slideshow-image').src = images[index];
+			index = (index + 1) % images.length;
+		}
+		
+		setInterval(updateSlideshow, 4000); 
+	</script>
+	<main>
+	<div class = "hero-image">
+		<h1>Welcome to our Watch Shop</h1>
+	</div>
+		
+		<div class="slideshow" style="max-width:500px">
+			<figure>
+				<img id="slideshow-image" src="img/watch_1.jpg" style="width:100%">
+				<figcaption>Shop our wide selection of high-quality watches for men and women.</figcaption>
+			</figure>
+		</div>	
+		<p>At our watch shop, you'll find a wide range of timepieces to choose from. Whether you're looking for a luxury watch or a more affordable option, we have something for everyone.</p>
+		<p>Our collection includes both men's and women's watches in a variety of styles and materials, including stainless steel, gold, and leather. We also offer watches with different features such as chronograph, water resistance, and automatic movement.</p>
+		<p>Browse our selection today and find the perfect watch for you!</p>
+		<p>At our online watch shop, we offer a wide selection of high-quality timepieces for both men and women. From luxury brands to affordable options, we have something for everyone. Our collection includes a range of styles, from classic and elegant to modern and sporty. We also have a variety of finishes and materials to choose from, including stainless steel, gold, leather, and more.</p>
+		<br>
+		<div class="social-media">
+			<a href="https://www.linkedin.com/in/rick-astley-b6a42b24/"><img src="img/linkedin.png" alt="Link to LinkedIn profile"></a>
+			<a href="https://twitter.com/rickastley"><img src="img/twitter.png" alt="Link to Twitter"></a>
+			<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="img/youtube.png" alt="Link to YouTube"></a>
+		</div>
+		<br>
+	</main>
+	<footer>
+		<p>Copyright &copy; 2023 Watch Shop</p>
+	</footer>
+</body>
+</html>
